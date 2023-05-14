@@ -1,6 +1,3 @@
-Here is a sample README file explaining how to use the program:
-
----
 
 # Pixel Drawer
 
