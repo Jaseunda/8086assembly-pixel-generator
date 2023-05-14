@@ -1,4 +1,17 @@
+from colorama import Fore, Back, Style, init
+init(autoreset=True)
+
 pixel_grid = [[' ' for _ in range(32)] for _ in range(32)]
+
+COLORS = {
+    'r': Fore.RED + '█',
+    'g': Fore.GREEN + '█',
+    'b': Fore.BLUE + '█',
+    'c': Fore.CYAN + '█',
+    'm': Fore.MAGENTA + '█',
+    'y': Fore.YELLOW + '█',
+    'w': Fore.WHITE + '█',
+}
 
 def print_grid(grid):
     for row in grid:
@@ -8,7 +21,7 @@ def print_grid(grid):
 
 def set_pixel(x, y, color):
     if 0 <= x < 32 and 0 <= y < 32:
-        pixel_grid[y][x] = color
+        pixel_grid[y][x] = COLORS.get(color, ' ')
     else:
         print("Invalid coordinates. Please enter numbers between 0 and 31.")
 
