@@ -68,6 +68,9 @@ while True:
     if user_input.lower() == 'q':
         assembly_code = generate_assembly_code(pixel_grid)
         print(assembly_code)
+        with open('output.asm', 'w') as file:
+            file.write(assembly_code)
+        print("Assembly code saved in 'output.asm'")
         break
 
     try:
