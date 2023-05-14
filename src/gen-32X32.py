@@ -1,8 +1,7 @@
 from colorama import Fore, Style, init
 init(autoreset=True)
 
-pixel_size = int(input("Please enter the pixel size: "))
-pixel_grid = [[' ' for _ in range(pixel_size)] for _ in range(pixel_size)]
+pixel_grid = [[' ' for _ in range(32)] for _ in range(32)]
 
 COLOR_CODES = {
     '0': Fore.BLACK + '◼',      # Black
@@ -30,10 +29,10 @@ def print_grid(grid):
         print()
 
 def set_pixel(x, y, color):
-    if 0 <= x < pixel_size and 0 <= y < pixel_size:
+    if 0 <= x < 32 and 0 <= y < 32:
         pixel_grid[y][x] = COLOR_CODES.get(color, ' ')
     else:
-        print("Invalid coordinates. Please enter numbers between 0 and {}.".format(pixel_size - 1))
+        print("Invalid coordinates. Please enter numbers between 0 and 31.")
 
 def generate_assembly_code(grid):
     assembly_code = []
