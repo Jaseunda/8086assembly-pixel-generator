@@ -4,7 +4,7 @@ Here is a sample README file explaining how to use the program:
 
 # Pixel Drawer
 
-This is a simple Python script that allows you to draw pixels on a 32x32 grid using various colors. The grid is represented in the terminal, with colored blocks representing pixels. When you're done drawing, the program generates 8086 assembly code that reproduces your drawing.
+This is a simple Python script that allows you to draw pixels on a 32x32[`src/gen32x32.py`](`or set your own gen.py`) grid using various colors. The grid is represented in the terminal, with colored blocks representing pixels. When you're done drawing, the program generates 8086 assembly code that reproduces your drawing.
 
 ## How to run
 1. Install requirements
@@ -14,7 +14,7 @@ This is a simple Python script that allows you to draw pixels on a 32x32 grid us
 ```python3 -m src/gen```
 ## How to use
 
-Run the Python script in your terminal. You will see an empty 32x32[src/gen32x32.py](`or set your own gen.py`) grid. You can set a pixel's color by entering its coordinates (x and y values) and a color code, separated by spaces. Here is an example:
+Run the Python script in your terminal. You will see an empty 32x32[`src/gen32x32.py`](`or set your own gen.py`) grid. You can set a pixel's color by entering its coordinates (x and y values) and a color code, separated by spaces. Here is an example:
 
 ```
 Enter x, y and color to set a pixel (x y color), or 'q' to quit: 5 5 7
