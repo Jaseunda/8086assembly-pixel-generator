@@ -4,22 +4,22 @@ init(autoreset=True)
 pixel_grid = [[' ' for _ in range(32)] for _ in range(32)]
 
 COLOR_CODES = {
-    '0': Fore.BLACK + '█',      # Black
-    '1': Fore.BLUE + '█',       # Blue
-    '2': Fore.GREEN + '█',      # Green
-    '3': Fore.CYAN + '█',       # Cyan
-    '4': Fore.RED + '█',        # Red
-    '5': Fore.MAGENTA + '█',    # Magenta
-    '6': Fore.YELLOW + '█',     # Brown
-    '7': Fore.WHITE + '█',      # White
-    '8': Fore.LIGHTBLACK_EX + '█',  # Gray
-    '9': Fore.LIGHTBLUE_EX + '█',   # Light Blue
-    'a': Fore.LIGHTGREEN_EX + '█',  # Light Green
-    'b': Fore.LIGHTCYAN_EX + '█',   # Light Cyan
-    'c': Fore.LIGHTRED_EX + '█',    # Light Red
-    'd': Fore.LIGHTMAGENTA_EX + '█',  # Light Magenta
-    'e': Fore.LIGHTYELLOW_EX + '█',  # Yellow
-    'f': Fore.LIGHTWHITE_EX + '█',   # Bright White
+    '0': Fore.BLACK + '◼',      # Black
+    '1': Fore.BLUE + '◼',       # Blue
+    '2': Fore.GREEN + '◼',      # Green
+    '3': Fore.CYAN + '◼',       # Cyan
+    '4': Fore.RED + '◼',        # Red
+    '5': Fore.MAGENTA + '◼',    # Magenta
+    '6': Fore.YELLOW + '◼',     # Brown
+    '7': Fore.WHITE + '◼',      # White
+    '8': Fore.LIGHTBLACK_EX + '◼',  # Gray
+    '9': Fore.LIGHTBLUE_EX + '◼',   # Light Blue
+    'a': Fore.LIGHTGREEN_EX + '◼',  # Light Green
+    'b': Fore.LIGHTCYAN_EX + '◼',   # Light Cyan
+    'c': Fore.LIGHTRED_EX + '◼',    # Light Red
+    'd': Fore.LIGHTMAGENTA_EX + '◼',  # Light Magenta
+    'e': Fore.LIGHTYELLOW_EX + '◼',  # Yellow
+    'f': Fore.LIGHTWHITE_EX + '◼',   # Bright White
 }
 
 def print_grid(grid):
